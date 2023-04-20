@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+			margin: 0;
+			padding: 0;
+		}
+        html,body{
+			height: 100%;
+			width: 100%;
+		}	
+        .grid{
+            display:grid;
+            height:97%;
+            grid-template-rows: repeat(6,120px);
+            grid-template-columns: repeat(6,auto);
+            
+            grid-template-areas: 'a1 a2 a3 a4 a5 a6'
+                                 'a7 a7 a8 a8 a8 a8'
+                                 'a7 a7 a8 a8 a8 a8'
+                                 'a7 a7 a8 a8 a8 a8'
+                                 'a9 a9 a10 a10 a11 a11'
+                                 'a9 a9 a10 a10 a11 a11';
+
+        }
+
+        .item{
+            
+        }
+        .item:nth-child(1){
+            grid-area: a1;
+        }
+        .item:nth-child(2){
+            grid-area: a2;
+        }
+        .item:nth-child(3){
+            grid-area: a3;
+        }
+        .item:nth-child(4){
+            grid-area: a4;
+        }
+        .item:nth-child(5){
+            grid-area: a5;
+        }
+        .item:nth-child(6){
+            grid-area: a6;
+        }
+        .item:nth-child(7){
+            grid-area: a7;
+        }
+        .item:nth-child(8){
+            grid-area: a8;
+        }
+        .item:nth-child(9){
+            grid-area: a9;
+        }
+        .item:nth-child(10){
+            grid-area: a10;
+        }
+        .item:nth-child(11){
+            grid-area: a11;
+        }
+
+        img{
+            
+            width: 100%;
+            height: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>dogs</div>
+    <div class="grid">
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+        <div class="item">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20190719/9d1b8e225a8d497685a3217fa2f19430.jpeg" alt="图片未显示展示的文字" title="鼠标悬停图标上显示的文字" />
+        </div>
+    </div>
+</body>
+</html>

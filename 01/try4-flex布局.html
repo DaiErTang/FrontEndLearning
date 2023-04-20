@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox {
+            display: flex;/*定义一个 flex container，可以设置为 flex 或 inline-flex。*/
+            height:200px;
+
+            flex-direction: row; /*用来设置主轴的方向，控制 flex items 排列方向的。默认为横向排列，取值有：row | row-reverse | column | column-reverse。（默认取值为第一个，如无特殊说明，以下属性默认取值都是第一个。）*/
+            flex-wrap: nowrap;/*用来设置 flex items 是否换行（在不缩放一行显示不下的情况下）。默认不换行，取值有：nowrap | wrap | wrap-reverse。*/
+            /*
+            Flex-Flow
+            为上面 flex-direction 属性和 flex-wrap 属性的简写形式，默认为其两个属性的默认值。语法为：<flex-direction> || <flex-wrap>。
+                eg.parent {
+                   flex-flow: column wrap;
+                   }
+            */
+            
+            justify-content:space-around;/*定义 flex items 在主轴上的分布方式。默认从主轴开始位置排列，取值有：flex-start(表示主轴开始位置) | flex-end(表示主轴结束位) | center(表示主轴中间位置) | space-between(表示 flex container 的多余空间在 flex items 之间平均分掉) | space-around(表示 flex container 的多余空间平均分配到每个 flex item 的左右（跟设置左右 margin 效果一样）)*/
+            align-items:center;/*定义 flex items 在交叉轴上的对齐方式。默认为拉伸，取值有：flex-start(表示交叉轴开始位置) | flex-end(表示交叉轴结束位置) | center(表示交叉轴中间位置) | baseline(表示 flex items 中的文字 baseline) | stretch(表示所有 flex items 拉伸至 flex container 的交叉轴大小）（stretch 为默认值）*/
+            align-content:center;/*用来定义 flex items 显示为多行的时候，交叉轴上的分布方式。默认从交叉轴开始位置排列，取值有：flex-start | flex-end | center | space-between | space-around | stretch(这里的 stretch 拉伸的标准为交叉轴剩余空间的分配)*/
+            background: yellow;
+        }
+
+        .item {
+            display: block;
+            height:50px;
+            margin: 10px;
+            background: red;
+            /* 转 inline 为 block 或 inline */
+        }
+    </style>
+</head>
+<div class="flexbox">
+    <span class="item">111</span>
+    <span class="item">222</span>
+    <span class="item">333</span>
+</div>
+
+<body>
+
+</body>
+
+</html>
